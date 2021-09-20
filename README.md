@@ -2,7 +2,7 @@
 A basic Rust genetic algorithm where the player finds its food
 
 ## How it works
-The player initally has 4 directions to move, i.e., North, South, East and West.
+The player initially has 4 directions to move, i.e., North, South, East and West.
 
 The player randomly chooses a direction.
 
