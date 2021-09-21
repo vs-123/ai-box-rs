@@ -33,8 +33,8 @@ impl Square {
 
     fn render(&mut self) {
         match self.direction {
-            Direction::North => self.y += self.speed,
-            Direction::South => self.y -= self.speed,
+            Direction::South => self.y += self.speed,
+            Direction::North => self.y -= self.speed,
             Direction::East => self.x += self.speed,
             Direction::West => self.x -= self.speed,
         }
@@ -88,6 +88,7 @@ async fn main() {
         if next_possible_directions.is_empty() {
             food.x = rng.gen::<f32>() * screen_width();
             food.y = rng.gen::<f32>() * screen_height();
+            previous_player_food_distance = player.distance_from(food);
             next_possible_directions = vec![
                 Direction::North,
                 Direction::South,
