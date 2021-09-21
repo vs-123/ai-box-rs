@@ -9,3 +9,6 @@ The player randomly chooses a direction.
 If the player moves further away from the food, then it will not use the same direction again.
 
 ![preview](https://github.com/vs-123/ai-box-rs/blob/main/screenshots/preview.PNG)
+
+### Video demonstration
+https://www.youtube.com/watch?v=CXQ0GDNN61M
